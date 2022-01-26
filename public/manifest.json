@@ -21,9 +21,6 @@
 		"512": "icons/favicon512.png"
 	},
 	"author": "Milovan Gudelj",
-	"background": {
-		"service_worker": "background.js"
-	},
 	"content_scripts": [
 		{
 			"matches": ["https://*.unipd.it/*", "http://*.unipd.it/*"],
