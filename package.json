@@ -6,6 +6,7 @@
 		"build": "next build && next export -o dist && yarn prepare",
 		"prepare": "mv dist/_next dist/assets && sed -i 's/\\/_next/\\/assets/g' dist/**.html",
 		"watch": "npm-watch build",
+		"zip": "zip -r chrome-extension.zip ./dist",
 		"start": "next start",
 		"lint": "next lint"
 	},
