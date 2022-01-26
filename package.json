@@ -3,9 +3,9 @@
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
-		"build": "next build && next export && yarn prepare",
-		"prepare": "mv out/_next out/assets && sed -i 's/\\/_next/\\/assets/g' out/**.html",
-		"watch": "npm-watch",
+		"build": "next build && next export -o dist && yarn prepare",
+		"prepare": "mv dist/_next dist/assets && sed -i 's/\\/_next/\\/assets/g' dist/**.html",
+		"watch": "npm-watch build",
 		"start": "next start",
 		"lint": "next lint"
 	},
@@ -13,27 +13,32 @@
 		"build": {
 			"patterns": [
 				".",
-				"styles/**",
-				"pages/**",
-				"public/**"
+				"styles",
+				"pages",
+				"components",
+				"public"
 			],
 			"ignore": [
-				"out",
+				"dist",
 				"node_modules",
-				".next"
+				".next",
+				".git"
 			],
 			"extensions": [
 				"js",
+				"jsx",
+				"ts",
+				"tsx",
 				"json",
 				"lock",
-				"tsx",
-				"ts"
+				"css",
+				"html"
 			]
 		}
 	},
 	"dependencies": {
+		"@heroicons/react": "^1.0.5",
 		"next": "12.0.7",
-		"npm-watch": "^0.11.0",
 		"react": "17.0.2",
 		"react-dom": "17.0.2"
 	},
@@ -41,6 +46,8 @@
 		"autoprefixer": "^10.4.1",
 		"eslint": "8.6.0",
 		"eslint-config-next": "12.0.7",
+		"nodemon": "^2.0.15",
+		"npm-watch": "^0.11.0",
 		"postcss": "^8.4.5",
 		"tailwindcss": "^3.0.9"
 	}

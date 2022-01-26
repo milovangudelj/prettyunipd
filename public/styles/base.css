@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif;
+}
+
+body,
+#page-footer {
+	background: var(--dp00);
+	color: var(--he-text);
+	overflow-x: hidden;
+}
+
+#page-footer,
+.copy,
+span.instancename,
+h3.sectionname {
+	color: var(--he-text) !important;
+}
+
+body.has_dock {
+	padding-left: 45px !important;
+}
+
+div#page {
+	padding: 0 !important;
+}
+
+.container-fluid {
+	overflow-x: hidden;
+}
+
+section#region-main {
+	background: var(--dp02);
+	overflow: auto;
+	border-radius: 4px;
+}
+
+#region-main {
+	color: var(--he-text);
+}
+
+div#top-header {
+	background: var(--dp02);
+}
+
+div#top-header > .container-fluid {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	flex-direction: row;
+	align-items: center;
+}
+
+a.logo.pull-left {
+	overflow: hidden;
+	height: 120px;
+	display: flex;
+	align-content: center;
+}
+
+img[src*="800_black"] {
+	height: 120px;
+	width: auto;
+}
+
+.page-hdng {
+	flex-grow: 1;
+	display: block;
+	height: 100%;
+	margin-left: 12px;
+	padding-left: 12px;
+}
+
+a.brand {
+	display: contents;
+	font-size: 16px;
+}
+
+.navbar .nav > li > a,
+.navbar .nav > li > a:hover,
+.navbar .nav > li > a:focus {
+	border: none;
+	font-size: 16px;
+}
+
+.loginpanel {
+	background: #666 !important;
+	padding: 24px !important;
+	box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2) !important;
+	border: none !important;
+}
+
+form#guestlogin {
+	display: flex;
+	justify-content: center;
+	margin: 24px 0;
+}
+
+input[value="Yes"],
+input[value="No"],
+.guestform > input[type="submit"] {
+	padding: 8px 16px !important;
+	margin: 0 !important;
+	border: none !important;
+	border-radius: 4px !important;
+	transition: 200ms ease all !important;
+	background-color: var(--primary) !important;
+}
+
+input[value="Yes"]:hover,
+input[value="No"]:hover,
+.guestform > input[type="submit"]:hover {
+	color: var(--he-text) !important;
+	transform: scale(1.1) !important;
+	border: none !important;
+}
+
+input[value="No"] {
+	background-color: var(--dp01) !important;
+}
+
+.guestform > input[type="submit"] {
+	display: block;
+	width: min-content;
+}

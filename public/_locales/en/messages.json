@@ -1,0 +1,20 @@
+{
+	"extensionName": {
+		"message": "Pretty Unipd"
+	},
+	"introParagraph": {
+		"message": "A neat little extension that modifies the look of parts of Unipd.it and it's pages."
+	},
+	"moreLink": {
+		"message": "How does this work?"
+	},
+	"reloadBtn": {
+		"message": "Reload page"
+	},
+	"toggleBtn_enabled": {
+		"message": "Disable"
+	},
+	"toggleBtn_disabled": {
+		"message": "Enable"
+	}
+}

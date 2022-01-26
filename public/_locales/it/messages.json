@@ -1,0 +1,20 @@
+{
+	"extensionName": {
+		"message": "Pretty Unipd"
+	},
+	"introParagraph": {
+		"message": "Una piccola estensione che modifica parti dell'interfaccia di Unipd.it e delle sue pagine."
+	},
+	"moreLink": {
+		"message": "Come funziona?"
+	},
+	"reloadBtn": {
+		"message": "Ricarica pagina"
+	},
+	"toggleBtn_enabled": {
+		"message": "Disabilita"
+	},
+	"toggleBtn_disabled": {
+		"message": "Abilita"
+	}
+}
