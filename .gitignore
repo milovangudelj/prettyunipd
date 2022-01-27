@@ -16,6 +16,9 @@
 # production
 /build
 
+# archives
+PrettyUnipd.zip
+
 # misc
 .DS_Store
 *.pem
