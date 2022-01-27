@@ -17,7 +17,14 @@
 /build
 
 # archives
-PrettyUnipd.zip
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
 
 # misc
 .DS_Store
