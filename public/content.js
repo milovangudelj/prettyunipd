@@ -1,5 +1,4 @@
 console.log("Pretty Unipd - v0.1.0");
-console.log("Extension running...");
 
 chrome.storage.sync.get("enabled", (data) => {
 	if (data.enabled) inject();
