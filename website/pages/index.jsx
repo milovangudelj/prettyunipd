@@ -15,7 +15,7 @@ export default function Home() {
 				<h1 className="text-5xl font-bold mb-4">Pretty Unipd</h1>
 				<p>
 					A neat little extension that modifies the look of parts of
-					Unipd.it and it's pages.
+					Unipd.it and it&apos;s pages.
 				</p>
 			</main>
 			<div className="absolute bottom-2 right-2 flex items-baseline">
