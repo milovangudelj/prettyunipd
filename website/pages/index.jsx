@@ -5,6 +5,7 @@ import { ChevronDownIcon, ChevronRightIcon } from "@heroicons/react/solid";
 import Hero from "../components/Hero";
 import { useRef, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 let faqs = [
 	{
@@ -148,6 +149,7 @@ let sections = [
 ];
 
 export default function Home() {
+	const location = "https://prettyu.uniorari.it";
 	const [browserX, setBrowserX] = useState(false);
 
 	const browserXRef = useRef(null);
@@ -173,12 +175,15 @@ export default function Home() {
 					content="Tired of seeing and using that old, clunky interface? Pretty U will replace it with a much more user friendly version."
 				/>
 				<link rel="icon" href="/favicon.ico" />
-				<meta property="og:image" content="/assets/images/link_cover.jpg" />
+				<meta
+					property="og:image"
+					content={`/assets/images/link_cover.png`}
+				/>
 				<meta property="og:image:width" content="1200" />
 				<meta property="og:image:height" content="630" />
 				<meta
 					property="og:image"
-					content="/assets/images/link_cover_small.jpg"
+					content={`/assets/images/link_cover_small.png`}
 				/>
 				<meta property="og:image:width" content="600" />
 				<meta property="og:image:height" content="315" />
