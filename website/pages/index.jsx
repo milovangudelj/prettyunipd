@@ -15,7 +15,7 @@ let faqs = [
 				<a
 					href="https://chrome.google.com/webstore/detail/pretty-unipd/paliadhebikeffllmbfcpmoahogiegcf"
 					target="_blank"
-					referrerPolicy="no-referrer"
+					rel="noreferrer"
 					className="text-accent-400"
 				>
 					Chrome Web Store
@@ -24,7 +24,7 @@ let faqs = [
 				<a
 					href="https://addons.mozilla.org/it/firefox/addon/prettyunipd/"
 					target="_blank"
-					referrerPolicy="no-referrer"
+					rel="noreferrer"
 					className="text-accent-400"
 				>
 					Add-ons for Firefox
@@ -42,7 +42,7 @@ let faqs = [
 				<a
 					href="https://gs.statcounter.com/browser-market-share/desktop/worldwide"
 					target="_blank"
-					referrerPolicy="no-referrer"
+					rel="noreferrer"
 					className="text-accent-400"
 				>
 					major browsers
@@ -51,7 +51,7 @@ let faqs = [
 				<a
 					href="https://en.wikipedia.org/wiki/Chromium_(web_browser)"
 					target="_blank"
-					referrerPolicy="no-referrer"
+					rel="noreferrer"
 					className="text-accent-400"
 				>
 					Chromium
@@ -69,7 +69,7 @@ let faqs = [
 				<a
 					href="https://unipd.it"
 					target="_blank"
-					referrerPolicy="no-referrer"
+					rel="noreferrer"
 					className="text-accent-400"
 				>
 					unipd.it
@@ -210,7 +210,7 @@ export default function Home() {
 							<a
 								href="mailto:i.like.martians@gmail.com"
 								target="_blank"
-								referrerPolicy="no-referrer"
+								rel="noreferrer"
 								className="text-accent-400"
 							>
 								i.like.martians@gmail.com

@@ -28,7 +28,7 @@ const Hero = ({ otherHandler }) => {
 						<a
 							href="https://chrome.google.com/webstore/detail/pretty-unipd/paliadhebikeffllmbfcpmoahogiegcf"
 							target="_blank"
-							referrerPolicy="no-referrer"
+							rel="noreferrer"
 							className="bg-chrome focus:ring-chrome focus:ring-offset-grey-900 focus:bg-chrome-alt flex w-full transform justify-center space-x-3 rounded-lg py-2 px-4 outline-none transition hover:-translate-y-0.5 focus:ring-2 focus:ring-offset-2 md:w-auto"
 						>
 							<img
@@ -42,7 +42,7 @@ const Hero = ({ otherHandler }) => {
 						<a
 							href="https://addons.mozilla.org/it/firefox/addon/prettyunipd/"
 							target="_blank"
-							referrerPolicy="no-referrer"
+							rel="noreferrer"
 							className="bg-firefox focus:ring-firefox focus:ring-offset-grey-900 focus:bg-firefox-alt flex w-full transform justify-center space-x-3 rounded-lg py-2 px-4 outline-none transition hover:-translate-y-0.5 focus:ring-2 focus:ring-offset-2 md:w-auto"
 						>
 							<img
