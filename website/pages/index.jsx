@@ -177,13 +177,13 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 				<meta
 					property="og:image"
-					content={`/assets/images/link_cover.png`}
+					content={`${location}/assets/images/link_cover.png`}
 				/>
 				<meta property="og:image:width" content="1200" />
 				<meta property="og:image:height" content="630" />
 				<meta
 					property="og:image"
-					content={`/assets/images/link_cover_small.png`}
+					content={`${location}/assets/images/link_cover_small.png`}
 				/>
 				<meta property="og:image:width" content="600" />
 				<meta property="og:image:height" content="315" />
