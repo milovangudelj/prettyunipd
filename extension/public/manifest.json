@@ -1,10 +1,10 @@
 {
 	"manifest_version": 3,
-	"name": "Pretty Unipd",
-	"short_name": "Pretty Unipd",
+	"name": "Pretty U",
+	"short_name": "Pretty U",
 	"version": "0.1.0",
 	"action": {
-		"default_title": "Pretty Unipd",
+		"default_title": "Pretty U",
 		"default_popup": "index.html",
 		"default_icon": {
 			"48": "icons/favicon48.png"
