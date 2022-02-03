@@ -125,7 +125,7 @@ let sections = [
 				At the moment Pretty U will replace completely the login page and
 				modify parts of the UI like the navigation bar. For a full list of
 				modificationas refer to the{" "}
-				<Link href="/modifications" passHref>
+				<Link href="/mods" passHref>
 					<a className="text-primary-500">mods page</a>
 				</Link>
 				.
