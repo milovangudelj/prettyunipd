@@ -3,23 +3,21 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import ModCategory from "../components/ModCategory";
 
-import mods from "../assets/mods.json";
-
 import { location } from "../variables";
 
-// export const getStaticProps = async () => {
-// 	const mods = await fetch(`${location}/assets/collections/mods.json`).then(
-// 		(res) => res.json()
-// 	);
+export const getStaticProps = async () => {
+	const mods = await fetch(`${location}/assets/collections/mods.json`).then(
+		(res) => res.json()
+	);
 
-// 	return {
-// 		props: {
-// 			mods,
-// 		},
-// 	};
-// };
+	return {
+		props: {
+			mods,
+		},
+	};
+};
 
-const Mods = () => {
+const Mods = ({ mods }) => {
 	const [categories, setCategories] = useState(mods);
 
 	return (
