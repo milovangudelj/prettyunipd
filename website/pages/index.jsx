@@ -5,7 +5,7 @@ import { Disclosure, Transition } from "@headlessui/react";
 import { ChevronDownIcon, ChevronRightIcon } from "@heroicons/react/solid";
 
 import Hero from "../components/Hero";
-import location from "../variables";
+import { location } from "../variables";
 
 let faqs = [
 	{
