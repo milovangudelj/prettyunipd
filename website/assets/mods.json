@@ -1,0 +1,30 @@
+[
+	{
+		"title": "Pages",
+		"description": "Complete page redesigns",
+		"mods": [
+			{
+				"title": "Shibboleth SSO",
+				"url": "http*://shibidp.cca.unipd.it/idp/profile/SAML2/Redirect/SSO*"
+			},
+			{
+				"title": "DEI login",
+				"url": "http*://elearning.dei.unipd.it/mod/page/view.php?id=*"
+			},
+			{
+				"title": "Site policy agreement",
+				"url": "http*://elearning.dei.unipd.it/user/policy.php"
+			}
+		]
+	},
+	{
+		"title": "Components",
+		"description": "Single component redesigns. (e.g. the navbar)",
+		"mods": [
+			{
+				"title": "DEI navbar",
+				"url": "http*://elearning.dei.unipd.it/*"
+			}
+		]
+	}
+]
