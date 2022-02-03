@@ -1,11 +1,11 @@
+import { useRef, useState } from "react";
 import Head from "next/head";
+import Link from "next/link";
 import { Disclosure, Transition } from "@headlessui/react";
 import { ChevronDownIcon, ChevronRightIcon } from "@heroicons/react/solid";
 
 import Hero from "../components/Hero";
-import { useRef, useState } from "react";
-import Link from "next/link";
-import { useRouter } from "next/router";
+import location from "../variables";
 
 let faqs = [
 	{
@@ -149,7 +149,6 @@ let sections = [
 ];
 
 export default function Home() {
-	const location = "https://prettyu.uniorari.it";
 	const [browserX, setBrowserX] = useState(false);
 
 	const browserXRef = useRef(null);
