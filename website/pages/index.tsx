@@ -184,19 +184,26 @@ export default function Home() {
 			<Divide />
 
 			{/* Value prop */}
-			<section className="flex flex-col space-y-16 py-16">
+			<section className="flex flex-col space-y-16 py-16 lg:space-y-24 lg:px-16 lg:py-24">
 				{sections.map((section, idx) => (
-					<div key={idx} className="flex flex-col px-4">
-						<div className="mb-8">
+					<div
+						key={idx}
+						className="mx-4 flex flex-col md:mx-8 md:flex-row md:items-center lg:mx-auto lg:w-full lg:max-w-7xl"
+					>
+						<div
+							className={`mb-8 md:mb-0 md:mr-8 ${
+								idx % 2 !== 0 && "md:order-last"
+							} lg:w-2/5`}
+						>
 							<h2 className="text-grey-900 dark:text-grey-50 mb-4 text-2xl font-bold">
 								{section.title}
 							</h2>
-							<p>{section.text}</p>
+							<p className="lg:max-w-[45ch]">{section.text}</p>
 						</div>
 						<img
 							src={section.img}
 							alt={section.imgAlt}
-							className="-mx-4 w-screen max-w-none"
+							className="-mx-4 w-screen max-w-none md:mx-0 md:w-[calc(50%-16px)] lg:w-3/5"
 						/>
 					</div>
 				))}
@@ -204,9 +211,9 @@ export default function Home() {
 			<Divide />
 
 			{/* FAQs */}
-			<section className="py-16">
-				<div className="px-4">
-					<div className="mb-8">
+			<section className="py-16 lg:px-16 lg:py-24">
+				<div className="mx-4 flex flex-col space-y-8 md:mx-8 md:flex-row md:space-y-0 md:space-x-8 lg:mx-auto lg:w-full lg:max-w-7xl">
+					<div className="md:w-1/2 lg:w-2/5">
 						<h2 className="text-grey-900 dark:text-grey-50 mb-4 text-xl font-medium">
 							FAQs
 						</h2>
@@ -224,7 +231,7 @@ export default function Home() {
 							.
 						</p>
 					</div>
-					<ul className="flex flex-col space-y-4">
+					<ul className="flex flex-col space-y-4 md:w-1/2 lg:w-3/5">
 						{faqs.map((faq, idx) => {
 							return (
 								<Disclosure key={idx}>
@@ -246,11 +253,17 @@ export default function Home() {
 												} flex w-full items-center rounded-lg p-2 transition`}
 											>
 												{(faq.id ? browserX : open) ? (
-													<ChevronDownIcon className="h-5 w-5" />
+													<ChevronDownIcon
+														aria-hidden={true}
+														className="h-[20px] w-[20px]"
+													/>
 												) : (
-													<ChevronRightIcon className="h-5 w-5" />
+													<ChevronRightIcon
+														aria-hidden={true}
+														className="h-[20px] w-[20px]"
+													/>
 												)}
-												<span className="ml-1.5 text-lg font-semibold">
+												<span className="ml-1.5 font-semibold">
 													{faq.q}
 												</span>
 											</Disclosure.Button>

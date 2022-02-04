@@ -4,9 +4,9 @@ type CategoryData = any;
 
 const ModCategory = ({ data }: CategoryData) => {
 	return (
-		<div className="px-4">
+		<div className="">
 			<div className="mb-8">
-				<h2 className="text-primary-500 dark:text-primary-400 mb-4 text-xl font-bold">
+				<h2 className="text-primary-500 dark:text-primary-400 mb-4 text-xl font-bold lg:text-2xl">
 					{data.title}
 				</h2>
 				<p>{data.description}</p>

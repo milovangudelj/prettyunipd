@@ -6,7 +6,7 @@
 
 @layer components {
 	.btn {
-		@apply font-medium flex w-full items-center transform justify-center space-x-3 rounded-lg py-2 px-4 outline-none transition hover:-translate-y-0.5 focus:ring-4 md:w-auto;
+		@apply min-w-[64px] md:w-max font-medium flex w-full items-center transform justify-center space-x-3 rounded-lg py-2 px-4 outline-none transition hover:-translate-y-0.5 focus:ring-4;
 	}
 
 	.btn--primary {
@@ -21,7 +21,7 @@
 
 	.btn--grey {
 		@apply btn;
-		@apply bg-grey-200 text-grey-500 focus:ring-grey-200/30 focus:bg-grey-300 dark:bg-grey-700 dark:text-grey-300 dark:focus:bg-grey-800 dark:focus:ring-grey-600/50;
+		@apply bg-grey-200 text-grey-500 focus:ring-grey-200/30 focus:bg-grey-300 dark:bg-grey-700 dark:text-grey-300 dark:focus:bg-grey-800 dark:focus:ring-grey-600/50 md:bg-transparent md:hover:bg-grey-200 md:focus:bg-grey-300 md:dark:bg-transparent md:dark:focus:bg-grey-800 md:dark:hover:bg-grey-800 md:hover:translate-y-0;
 	}
 
 	.btn--chrome {
@@ -53,7 +53,7 @@ a {
 	display: none;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
 	/* width */
 	::-webkit-scrollbar {
 		display: unset;
