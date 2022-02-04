@@ -6,6 +6,7 @@ import { ChevronDownIcon, ChevronRightIcon } from "@heroicons/react/solid";
 
 import Hero from "../components/Hero";
 import { location } from "../variables";
+import Divide from "../components/Divide";
 
 let faqs = [
 	{
@@ -17,7 +18,6 @@ let faqs = [
 					href="https://chrome.google.com/webstore/detail/pretty-unipd/paliadhebikeffllmbfcpmoahogiegcf"
 					target="_blank"
 					rel="noreferrer"
-					className="text-accent-400"
 				>
 					Chrome Web Store
 				</a>{" "}
@@ -26,7 +26,6 @@ let faqs = [
 					href="https://addons.mozilla.org/it/firefox/addon/prettyunipd/"
 					target="_blank"
 					rel="noreferrer"
-					className="text-accent-400"
 				>
 					Add-ons for Firefox
 				</a>{" "}
@@ -44,7 +43,6 @@ let faqs = [
 					href="https://gs.statcounter.com/browser-market-share/desktop/worldwide"
 					target="_blank"
 					rel="noreferrer"
-					className="text-accent-400"
 				>
 					major browsers
 				</a>{" "}
@@ -53,7 +51,6 @@ let faqs = [
 					href="https://en.wikipedia.org/wiki/Chromium_(web_browser)"
 					target="_blank"
 					rel="noreferrer"
-					className="text-accent-400"
 				>
 					Chromium
 				</a>{" "}
@@ -67,12 +64,7 @@ let faqs = [
 			<>
 				What? Of course not. The extension was made to help myself and my
 				fellow students navigate the intricate and sometimes outdated{" "}
-				<a
-					href="https://unipd.it"
-					target="_blank"
-					rel="noreferrer"
-					className="text-accent-400"
-				>
+				<a href="https://unipd.it" target="_blank" rel="noreferrer">
 					unipd.it
 				</a>{" "}
 				UI.
@@ -108,7 +100,7 @@ let faqs = [
 
 let sections = [
 	{
-		title: "How does it work?",
+		title: "Better UI",
 		text: (
 			<>
 				Pretty U injects some custom CSS and JS files in the page and uses
@@ -119,14 +111,13 @@ let sections = [
 		imgAlt: "Login page comparison",
 	},
 	{
-		title: "What changes?",
+		title: "Easier navigation",
 		text: (
 			<>
-				At the moment Pretty U will replace completely the login page and
-				modify parts of the UI like the navigation bar. For a full list of
-				modificationas refer to the{" "}
+				Navigate the site easily with the new simplified navigation bar. See
+				the full list of modificationas in the{" "}
 				<Link href="/mods" passHref>
-					<a className="text-primary-500">mods page</a>
+					<a>mods page</a>
 				</Link>
 				.
 			</>
@@ -135,11 +126,11 @@ let sections = [
 		imgAlt: "DEI navbar comparison",
 	},
 	{
-		title: "Is it secure?",
+		title: "Secure by default",
 		text: (
 			<>
-				Absolutely. Pretty U only modifies the structure and look of the UI,
-				it doesn&apos;t interfere with the page&apos;s data fetching and
+				Pretty U only modifies the structure and look of the UI, it
+				doesn&apos;t interfere with the page&apos;s data fetching and
 				authentication logic.
 			</>
 		),
@@ -188,42 +179,38 @@ export default function Home() {
 				<meta property="og:image:height" content="315" />
 			</Head>
 
+			{/* Hero section */}
 			<Hero otherHandler={toggleBrowserX} />
+			<Divide />
 
-			<div className="flex w-full flex-col space-y-8 py-16 md:space-y-16 lg:space-y-24 lg:py-24">
+			{/* Value prop */}
+			<section className="flex flex-col space-y-16 py-16">
 				{sections.map((section, idx) => (
-					<section
-						key={idx}
-						className="mx-auto w-full max-w-screen-xl overflow-visible px-4 md:flex md:items-center md:px-8 xl:px-4"
-					>
-						<div
-							className={`mb-8 flex flex-col space-y-2 md:mb-0 md:w-full ${
-								idx % 2 !== 0 ? "order-last mr-0 lg:ml-24" : "lg:mr-24"
-							}`}
-						>
-							<h2 className="text-grey-900 text-2xl font-bold sm:text-3xl md:text-4xl">
+					<div key={idx} className="flex flex-col px-4">
+						<div className="mb-8">
+							<h2 className="text-grey-900 dark:text-grey-50 mb-4 text-2xl font-bold">
 								{section.title}
 							</h2>
-							<p className="text-grey-500 max-w-[45ch] text-base">
-								{section.text}
-							</p>
+							<p>{section.text}</p>
 						</div>
 						<img
 							src={section.img}
 							alt={section.imgAlt}
-							className="-ml-4 -mr-4 w-screen max-w-none sm:m-0 sm:w-full md:w-1/2 lg:max-w-screen-sm"
+							className="-mx-4 w-screen max-w-none"
 						/>
-					</section>
+					</div>
 				))}
-			</div>
+			</section>
+			<Divide />
 
-			<div className="bg-primary-500 w-full py-16 lg:py-24">
-				<section className="mx-auto flex w-full max-w-screen-xl flex-col space-y-8 px-4 md:space-y-16 md:px-8 lg:flex-row lg:space-y-0 lg:space-x-24 xl:px-4">
-					<div className="flex w-full flex-col space-y-4">
-						<h2 className="text-on-primary-he text-xl font-medium sm:text-2xl md:text-3xl">
+			{/* FAQs */}
+			<section className="py-16">
+				<div className="px-4">
+					<div className="mb-8">
+						<h2 className="text-grey-900 dark:text-grey-50 mb-4 text-xl font-medium">
 							FAQs
 						</h2>
-						<p className="text-on-primary-me text-base md:max-w-prose">
+						<p>
 							Everything you need to know about Pretty U. Can&apos;t find
 							the answer you were looking for? Feel free to reach out to
 							me at{" "}
@@ -231,14 +218,13 @@ export default function Home() {
 								href="mailto:i.like.martians@gmail.com"
 								target="_blank"
 								rel="noreferrer"
-								className="text-accent-400"
 							>
 								i.like.martians@gmail.com
 							</a>
 							.
 						</p>
 					</div>
-					<ul className="mx-auto flex w-full max-w-screen-xl flex-col space-y-4">
+					<ul className="flex flex-col space-y-4">
 						{faqs.map((faq, idx) => {
 							return (
 								<Disclosure key={idx}>
@@ -246,26 +232,25 @@ export default function Home() {
 										<li
 											id={faq?.id}
 											className={`${
-												(faq.id ? browserX : open)
-													? "bg-primary-600"
-													: "bg-primary-500"
-											} h-auto rounded-lg transition`}
+												(faq.id ? browserX : open) &&
+												"bg-grey-100 dark:bg-grey-800"
+											} rounded-lg transition-all`}
 											onClick={faq?.id && handleClick}
 										>
 											<Disclosure.Button
 												ref={faq.id && browserXRef}
-												className={`${
+												className={`hover:bg-grey-100 dark:hover:bg-grey-800 hover:text-grey-900 dark:hover:text-grey-50 ${
 													(faq.id ? browserX : open)
-														? "text-on-primary-he"
-														: "text-on-primary-me hover:bg-primary-400"
-												} hover:text-on-primary-he flex w-full items-center space-x-2 rounded-lg p-2 transition`}
+														? "text-grey-900 dark:text-grey-50"
+														: "text-grey-500 dark:text-grey-300"
+												} flex w-full items-center rounded-lg p-2 transition`}
 											>
 												{(faq.id ? browserX : open) ? (
 													<ChevronDownIcon className="h-5 w-5" />
 												) : (
 													<ChevronRightIcon className="h-5 w-5" />
 												)}
-												<span className="text-lg font-medium">
+												<span className="ml-1.5 font-bold">
 													{faq.q}
 												</span>
 											</Disclosure.Button>
@@ -279,7 +264,7 @@ export default function Home() {
 												leaveFrom="opacity-100"
 												leaveTo="opacity-0"
 											>
-												<Disclosure.Panel className="text-on-primary-me ml-7 p-2 pt-0 text-base">
+												<Disclosure.Panel className="p-4 pt-2 pl-[34px]">
 													{faq.a}
 												</Disclosure.Panel>
 											</Transition>
@@ -289,8 +274,8 @@ export default function Home() {
 							);
 						})}
 					</ul>
-				</section>
-			</div>
+				</div>
+			</section>
 		</>
 	);
 }

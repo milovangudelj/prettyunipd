@@ -10,6 +10,23 @@ module.exports = {
 		fontFamily: {
 			sans: ["Inter", ...defaultTheme.fontFamily.sans],
 		},
+		fontSize: {
+			xs: ["0.64rem", "1.3"],
+			sm: ["0.8rem", "1.3"],
+			base: ["1rem", "1.75"],
+			lg: ["1.25rem", "1.3"],
+			xl: ["1.563rem", "1.3"],
+			"2xl": ["1.953rem", "1.3"],
+			"3xl": ["2.441rem", "1.3"],
+			"4xl": ["3.052rem", "1.3"],
+			"5xl": ["3.815rem", "1.3"],
+		},
+		fontWeight: {
+			normal: 400,
+			medium: 500,
+			semibold: 600,
+			bold: 700,
+		},
 		colors: {
 			grey: {
 				50: "#F8FAFC",
@@ -84,16 +101,6 @@ module.exports = {
 			firefox: {
 				DEFAULT: "#FF7139",
 				alt: "#E25821",
-			},
-			"on-surface": {
-				he: "rgba(0, 0, 0, 0.87)",
-				me: "rgba(0, 0, 0, 0.60)",
-				le: "rgba(0, 0, 0, 0.38)",
-			},
-			"on-primary": {
-				he: "rgba(255, 255, 255, 1)",
-				me: "rgba(255, 255, 255, 0.74)",
-				le: "rgba(255, 255, 255, 0.38)",
 			},
 		},
 		extend: {},

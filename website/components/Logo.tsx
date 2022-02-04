@@ -1,5 +1,13 @@
-const Logo = ({ pretty, size = "md", className }) => {
-	return pretty ? (
+const Logo = ({
+	og = false,
+	size = "md",
+	className,
+}: {
+	og?: boolean;
+	size?: string;
+	className?: string;
+}) => {
+	return !og ? (
 		size === "md" ? (
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
