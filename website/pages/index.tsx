@@ -86,7 +86,7 @@ let faqs = [
 		),
 	},
 	{
-		q: "Something's off... What can I do?",
+		q: "Something is missing",
 		a: (
 			<>
 				If something is missing or out of place you can disable the
@@ -233,13 +233,13 @@ export default function Home() {
 											id={faq?.id}
 											className={`${
 												(faq.id ? browserX : open) &&
-												"bg-grey-100 dark:bg-grey-800"
+												"bg-primary-50 dark:bg-grey-800"
 											} rounded-lg transition-all`}
 											onClick={faq?.id && handleClick}
 										>
 											<Disclosure.Button
 												ref={faq.id && browserXRef}
-												className={`hover:bg-grey-100 dark:hover:bg-grey-800 hover:text-grey-900 dark:hover:text-grey-50 ${
+												className={`hover:bg-primary-50 dark:hover:bg-grey-800 hover:text-grey-900 dark:hover:text-grey-50 ${
 													(faq.id ? browserX : open)
 														? "text-grey-900 dark:text-grey-50"
 														: "text-grey-500 dark:text-grey-300"
@@ -250,7 +250,7 @@ export default function Home() {
 												) : (
 													<ChevronRightIcon className="h-5 w-5" />
 												)}
-												<span className="ml-1.5 font-bold">
+												<span className="ml-1.5 text-lg font-semibold">
 													{faq.q}
 												</span>
 											</Disclosure.Button>

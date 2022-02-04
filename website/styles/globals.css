@@ -6,7 +6,7 @@
 
 @layer components {
 	.btn {
-		@apply font-medium flex w-full transform justify-center space-x-3 rounded-lg py-2 px-4 outline-none transition hover:-translate-y-0.5 focus:ring-4 md:w-auto;
+		@apply font-medium flex w-full items-center transform justify-center space-x-3 rounded-lg py-2 px-4 outline-none transition hover:-translate-y-0.5 focus:ring-4 md:w-auto;
 	}
 
 	.btn--primary {
@@ -36,7 +36,7 @@
 }
 
 html {
-	/* @apply text-[18px] lg:text-[16px]; */
+	@apply text-[18px] lg:text-[16px];
 	@apply scroll-smooth motion-reduce:scroll-auto;
 }
 

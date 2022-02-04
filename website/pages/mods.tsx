@@ -43,28 +43,30 @@ const Mods = ({ mods }) => {
 				</div>
 			</header>
 			<Annotation className="mt-8">
-				<p>
-					URLs may contain wildcard characters like the asterisk. For
-					example, in the following url it can be replaced with any of
-					unipd&apos;s subdomain names.
-				</p>
-				<div className="text-grey-700 dark:text-grey-300 mt-4 flex items-center space-x-4 text-sm italic">
-					<span>
-						https://
-						<span className="text-primary-500 dark:text-primary-400">
-							*
+				<>
+					<p>
+						URLs may contain wildcard characters like the asterisk. For
+						example, in the following url it can be replaced with any of
+						unipd&apos;s subdomain names.
+					</p>
+					<div className="text-grey-700 dark:text-grey-300 mt-4 flex items-center space-x-4 text-sm italic">
+						<span>
+							https://
+							<span className="text-primary-500 dark:text-primary-400">
+								*
+							</span>
+							.unipd.it
 						</span>
-						.unipd.it
-					</span>
-					<ArrowNarrowRightIcon className="text-grey-500 h-5 w-5" />
-					<span>
-						https://
-						<span className="text-primary-500 dark:text-primary-400">
-							uniweb
+						<ArrowNarrowRightIcon className="text-grey-500 h-5 w-5" />
+						<span>
+							https://
+							<span className="text-primary-500 dark:text-primary-400">
+								uniweb
+							</span>
+							.unipd.it
 						</span>
-						.unipd.it
-					</span>
-				</div>
+					</div>
+				</>
 			</Annotation>
 			<main className="flex flex-col space-y-16 py-8">
 				{categories.map((category, idx) => (
