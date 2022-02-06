@@ -1,12 +1,15 @@
 import { ExternalLinkIcon } from "@heroicons/react/solid";
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 import Button from "./Button";
 import { ChromeLogo, FirefoxLogo } from "./Icon";
 import Logo from "./Logo";
+import messages from "../_locales/messages.json";
 
 const Hero = ({ otherHandler }) => {
 	const router = useRouter();
+	const [text, setText] = useState(messages[router.locale][router.pathname]);
 
 	return (
 		<main className="py-16 lg:py-24 lg:px-16">
@@ -24,13 +27,12 @@ const Hero = ({ otherHandler }) => {
 					</a>{" "}
 					great again.
 				</h1>
-				<p className="leading-body mb-16 max-w-[45ch] text-base font-semibold lg:text-center lg:text-lg">
-					Tired of seeing and using that old, clunky interface? Pretty U
-					will replace it with a much more user friendly version.
+				<p className="mb-16 max-w-[45ch] text-base font-semibold lg:text-center lg:text-lg">
+					{text.heroParagraph}
 				</p>
 				<div className="lg:flex lg:flex-col lg:items-center">
 					<span className="text-primary-500 dark:text-primary-400 text-sm font-medium uppercase leading-tight">
-						Get it on
+						{text.getItOn}
 					</span>
 					<div className="mt-4 flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
 						<Button
@@ -50,7 +52,7 @@ const Hero = ({ otherHandler }) => {
 							}
 							variant="chrome"
 						>
-							Chrome Web Store
+							{text.chromeWebStore}
 						</Button>
 						<Button
 							onClick={() => {
@@ -69,7 +71,7 @@ const Hero = ({ otherHandler }) => {
 							}
 							variant="firefox"
 						>
-							Add-ons for Firefox
+							{text.addonsForFirefox}
 						</Button>
 						<Button
 							onClick={(e) => {
@@ -78,7 +80,7 @@ const Hero = ({ otherHandler }) => {
 							}}
 							variant="grey"
 						>
-							Other...
+							{text.otherBrowser}
 						</Button>
 					</div>
 				</div>

@@ -1,27 +1,8 @@
+import { formatAst } from "../utils";
+
 type ModData = any;
 
 const ModItem = ({ data }: ModData) => {
-	/**
-	 * Returns a fragment with all asterisks wrapped by a span element
-	 */
-	const format = (url: string) => {
-		let splitted = url.split(/(\*)/g);
-
-		return (
-			<>
-				{splitted.map((s) => {
-					return s === "*" ? (
-						<span className="text-primary-500 dark:text-primary-400">
-							{s}
-						</span>
-					) : (
-						s
-					);
-				})}
-			</>
-		);
-	};
-
 	return (
 		<li className="flex flex-col">
 			<div className="flex items-center">
@@ -31,7 +12,7 @@ const ModItem = ({ data }: ModData) => {
 				</span>
 			</div>
 			<span className="text-grey-400 dark:text-grey-500 break-words pl-6 text-sm font-normal italic">
-				{format(data.url)}
+				{formatAst(data.url)}
 			</span>
 		</li>
 	);
