@@ -61,16 +61,16 @@ a {
 
 	/* Track */
 	::-webkit-scrollbar-track {
-		@apply bg-grey-200;
+		@apply bg-grey-200 dark:bg-grey-700;
 	}
 
 	/* Handle */
 	::-webkit-scrollbar-thumb {
-		@apply bg-grey-900/20 rounded-full border-grey-200;
+		@apply bg-grey-900/20 dark:bg-grey-50/20 rounded-full;
 	}
 
 	/* Handle on hover */
 	::-webkit-scrollbar-thumb:hover {
-		@apply bg-grey-900/40;
+		@apply bg-grey-900/40 dark:bg-grey-50/40;
 	}
 }
