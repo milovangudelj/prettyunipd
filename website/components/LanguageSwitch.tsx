@@ -43,7 +43,7 @@ const LanguageSwitch = ({ dark }: { dark?: boolean }) => {
 								: "hover:ring-primary-100") + " hover:ring-1"
 				}`}
 			>
-				<Flag country="en" />
+				<Flag country="en" className="h-[15px] lg:h-[12px]" />
 			</button>
 			<button
 				onClick={handleSwitch}
@@ -58,7 +58,7 @@ const LanguageSwitch = ({ dark }: { dark?: boolean }) => {
 								: "hover:ring-primary-100") + " hover:ring-1"
 				}`}
 			>
-				<Flag country="it" />
+				<Flag country="it" className="h-[15px] lg:h-[12px]" />
 			</button>
 		</div>
 	);
