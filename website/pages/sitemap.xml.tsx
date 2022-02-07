@@ -25,7 +25,10 @@ export const getServerSideProps = ({ res }) => {
 					? staticPagePath.substring(0, staticPagePath.length - 3)
 					: "";
 
-			return `${location}/${path}`;
+			return `${location}/${staticPagePath.substring(
+				0,
+				staticPagePath.length - 3
+			)}`;
 		});
 
 	const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
