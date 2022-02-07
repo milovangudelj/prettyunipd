@@ -57,7 +57,12 @@
 				"a": "Se qualcosa manca o è fuori posto puoi disabilitare l'estensione e ricaricare la pagina. Se dopo averlo fatto non è cambiato nulla, allora è un problema della pagina sottostante e non di Pretty U."
 			}
 		],
-		"projectBy": "Un progetto di"
+		"projectBy": "Un progetto di",
+		"themeSwitch": {
+			"system": "Sistema",
+			"dark": "Scuro",
+			"light": "Chiaro"
+		}
 	},
 	"/mods": {
 		"homeLink": "Home",
@@ -95,6 +100,11 @@
 				]
 			}
 		],
-		"projectBy": "Un progetto di"
+		"projectBy": "Un progetto di",
+		"themeSwitch": {
+			"system": "Sistema",
+			"dark": "Scuro",
+			"light": "Chiaro"
+		}
 	}
 }

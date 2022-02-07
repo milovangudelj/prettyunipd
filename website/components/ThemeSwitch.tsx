@@ -10,40 +10,43 @@ import {
 import { Fragment, useEffect, useRef, useState } from "react";
 import { useTheme } from "../lib/theme";
 
-const themes = [
-	{
-		id: 1,
-		name: "System",
-		value: "system",
-		unavailable: false,
-		icon: (
-			<DesktopComputerIcon
-				className="h-icon w-icon text-gray-400"
-				aria-hidden="true"
-			/>
-		),
-	},
-	{
-		id: 2,
-		name: "Dark",
-		value: "dark",
-		unavailable: false,
-		icon: (
-			<MoonIcon className="h-icon w-icon text-gray-400" aria-hidden="true" />
-		),
-	},
-	{
-		id: 3,
-		name: "Light",
-		value: "light",
-		unavailable: false,
-		icon: (
-			<SunIcon className="h-icon w-icon text-gray-400" aria-hidden="true" />
-		),
-	},
-];
+const ThemeSwitch = ({ text }) => {
+	const themes = [
+		{
+			id: 1,
+			value: "system",
+			unavailable: false,
+			icon: (
+				<DesktopComputerIcon
+					className="h-icon w-icon text-gray-400"
+					aria-hidden="true"
+				/>
+			),
+		},
+		{
+			id: 2,
+			value: "dark",
+			unavailable: false,
+			icon: (
+				<MoonIcon
+					className="h-icon w-icon text-gray-400"
+					aria-hidden="true"
+				/>
+			),
+		},
+		{
+			id: 3,
+			value: "light",
+			unavailable: false,
+			icon: (
+				<SunIcon
+					className="h-icon w-icon text-gray-400"
+					aria-hidden="true"
+				/>
+			),
+		},
+	];
 
-const ThemeSwitch = (props) => {
 	const { theme, setTheme } = useTheme();
 	const [selectedTheme, setSelectedTheme] = useState(
 		themes.find((el) => el.value === theme)
@@ -68,7 +71,7 @@ const ThemeSwitch = (props) => {
 								{selectedTheme.icon}
 							</span>
 							<span className="text-grey-900 dark:text-grey-50 block truncate text-sm font-normal">
-								{selectedTheme.name}
+								{text[selectedTheme.value]}
 							</span>
 						</div>
 						<span className="dark:text-grey-500 text-grey-400 pointer-events-none">
@@ -104,7 +107,7 @@ const ThemeSwitch = (props) => {
 								>
 									{({ active, selected }) => (
 										<li
-											className={`flex space-x-1.5 py-1 px-2 ${
+											className={`flex items-center space-x-1.5 py-1 px-2 ${
 												active
 													? "bg-grey-200 dark:bg-grey-700 text-grey-900 dark:text-grey-50"
 													: "text-grey-900 dark:text-grey-50"
@@ -113,7 +116,7 @@ const ThemeSwitch = (props) => {
 											<span className="dark:text-grey-500 text-grey-400 pointer-events-none">
 												{t.icon}
 											</span>
-											<span>{t.name}</span>
+											<span>{text[t.value]}</span>
 										</li>
 									)}
 								</Listbox.Option>

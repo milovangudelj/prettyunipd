@@ -9,7 +9,7 @@ const Footer = ({ text }) => {
 					<span className="text-grey-500 text-sm">{text?.projectBy}</span>
 					<Logo size="sm" og />
 				</div>
-				<ThemeSwitch />
+				<ThemeSwitch text={text.themeSwitch} />
 			</div>
 		</footer>
 	);

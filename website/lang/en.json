@@ -57,7 +57,12 @@
 				"a": "If something is missing or out of place you can disable the extension and reload the page. If after diong that you still see the issue, then it's a problem in the underlying page and not in Pretty U itself."
 			}
 		],
-		"projectBy": "A project by"
+		"projectBy": "A project by",
+		"themeSwitch": {
+			"system": "System",
+			"dark": "Dark",
+			"light": "Light"
+		}
 	},
 	"/mods": {
 		"homeLink": "Home",
@@ -95,6 +100,11 @@
 				]
 			}
 		],
-		"projectBy": "A project by"
+		"projectBy": "A project by",
+		"themeSwitch": {
+			"system": "System",
+			"dark": "Dark",
+			"light": "Light"
+		}
 	}
 }
