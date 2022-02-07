@@ -26,8 +26,8 @@ const Mods = ({ text }) => {
 	return (
 		<>
 			<Head>
-				<title>Pretty U — Mods list</title>
-				<meta name="title" content="Pretty U — Mods list" />
+				<title>Pretty U — {text.pageTitle}</title>
+				<meta name="title" content={`Pretty U — ${text.pageTitle}`} />
 				<meta name="description" content={text?.introParagraph} />
 				<link rel="icon" href="/favicon.ico" />
 				<meta
