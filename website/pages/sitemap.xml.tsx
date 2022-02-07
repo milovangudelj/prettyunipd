@@ -13,16 +13,16 @@ export const getServerSideProps = ({ res }) => {
 		)
 		.filter((staticPage) => {
 			return ![
-				"_app.tsx",
-				"_document.tsx",
-				"_error.tsx",
-				"sitemap.xml.tsx",
+				"_app.js",
+				"_document.js",
+				"_error.js",
+				"sitemap.xml.js",
 			].includes(staticPage);
 		})
 		.map((staticPagePath) => {
 			const path =
-				staticPagePath !== "index.tsx"
-					? staticPagePath.substring(0, staticPagePath.length - 4)
+				staticPagePath !== "index.js"
+					? staticPagePath.substring(0, staticPagePath.length - 3)
 					: "";
 
 			return `${location}/${path}`;
