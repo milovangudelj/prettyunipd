@@ -49,6 +49,10 @@ const ThemeSwitch = (props) => {
 		themes.find((el) => el.value === theme)
 	);
 
+	useEffect(() => {
+		setSelectedTheme(themes.find((el) => el.value === theme));
+	}, [theme]);
+
 	const handleThemeChange = (selected) => {
 		setSelectedTheme(selected);
 		setTheme(selected.value || "system");
