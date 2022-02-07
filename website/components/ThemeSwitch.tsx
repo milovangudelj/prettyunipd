@@ -65,12 +65,12 @@ const ThemeSwitch = ({ text }) => {
 		<Listbox value={selectedTheme} onChange={handleThemeChange}>
 			{({ open }) => (
 				<div className="relative">
-					<Listbox.Button className="bg-grey-100 dark:bg-grey-800 ring-grey-200 dark:ring-grey-700 flex w-32 justify-between rounded px-2 py-1 outline-none transition hover:ring-2 focus:ring-2">
-						<div className="flex w-max items-center space-x-1.5">
+					<Listbox.Button className="bg-grey-100 dark:bg-grey-800 ring-grey-200 dark:ring-grey-700 flex w-36 items-center justify-between rounded px-3 py-1 pr-2 outline-none transition hover:ring-2 focus:ring-2">
+						<div className="flex w-max items-center space-x-2.5">
 							<span className="dark:text-grey-500 text-grey-400 pointer-events-none">
 								{selectedTheme.icon}
 							</span>
-							<span className="text-grey-900 dark:text-grey-50 block truncate text-sm font-normal">
+							<span className="text-grey-900 dark:text-grey-50 block truncate text-base font-normal lg:text-sm">
 								{text[selectedTheme.value]}
 							</span>
 						</div>
@@ -89,7 +89,7 @@ const ThemeSwitch = ({ text }) => {
 					>
 						<Listbox.Options
 							static
-							className="bg-grey-100 dark:bg-grey-800 absolute bottom-full mb-1 max-h-60 w-full overflow-auto rounded py-1 text-sm shadow-lg focus:outline-none"
+							className="bg-grey-100 dark:bg-grey-800 absolute bottom-full mb-1 max-h-60 w-full overflow-auto rounded py-1 text-base shadow-lg focus:outline-none lg:text-sm"
 						>
 							{themes.map((t) => (
 								<Listbox.Option
@@ -107,10 +107,10 @@ const ThemeSwitch = ({ text }) => {
 								>
 									{({ active, selected }) => (
 										<li
-											className={`flex items-center space-x-1.5 py-1 px-2 ${
+											className={`flex items-center space-x-2.5 py-1 px-3 ${
 												active
 													? "bg-grey-200 dark:bg-grey-700 text-grey-900 dark:text-grey-50"
-													: "text-grey-900 dark:text-grey-50"
+													: "text-grey-500 dark:text-grey-300"
 											}`}
 										>
 											<span className="dark:text-grey-500 text-grey-400 pointer-events-none">
