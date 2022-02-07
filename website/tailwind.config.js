@@ -5,7 +5,7 @@ module.exports = {
 		"./pages/**/*.{js,ts,jsx,tsx}",
 		"./components/**/*.{js,ts,jsx,tsx}",
 	],
-	darkMode: "media", // or 'media' or 'class'
+	darkMode: "class", // or 'media' or 'class'
 	theme: {
 		fontFamily: {
 			sans: ["Inter", ...defaultTheme.fontFamily.sans],
@@ -103,7 +103,14 @@ module.exports = {
 				alt: "#E25821",
 			},
 		},
-		extend: {},
+		extend: {
+			width: {
+				icon: "20px",
+			},
+			height: {
+				icon: "20px",
+			},
+		},
 	},
 	plugins: [],
 };

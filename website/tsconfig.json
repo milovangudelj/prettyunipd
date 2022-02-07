@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "lib/messages.jsx"  ],
   "exclude": [
     "node_modules"
   ]

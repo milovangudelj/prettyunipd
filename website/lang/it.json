@@ -1,0 +1,100 @@
+{
+	"/": {
+		"heroContents": {
+			"heroHeading": "Make Unipd.it great again.",
+			"heroParagraph": "Stanco di vedere e usare quella vecchia interfaccia? Pretty U la scambierà con una versione più elegante e usabile.",
+			"getItOn": "Scaricala da",
+			"chromeWebStore": "Chrome Web Store",
+			"addonsForFirefox": "Add-ons per Firefox",
+			"otherBrowser": "Altro..."
+		},
+		"sections": [
+			{
+				"title": "UI migliorata",
+				"text": "Pretty U inserisce dei file CSS e JS nella pagina e li usa per migliorare il layout e il design dell'interfaccia.",
+				"img": "/assets/images/comparison_1.png",
+				"imgAlt": "Immagine di paragone della pagina di login"
+			},
+			{
+				"title": "Navigazione semplice",
+				"text": "Naviga il sito facilmente con la nuova barra di navigazione. Vedi la lista completa delle modifiche alla [relativa pagina](/mods).",
+				"img": "/assets/images/comparison_2.png",
+				"imgAlt": "Immagine di paragone della barra di navigazione del DEI"
+			},
+			{
+				"title": "Sicura di default",
+				"text": "Pretty U modifica solo la struttura e l'aspetto dell'interfaccia e non interferisce con la logica di autenticazione o di trasmissione dei dati.",
+				"img": "/assets/images/code_screenshot.png",
+				"imgAlt": "Screenshot del codice degli scripts"
+			}
+		],
+		"FAQs": "FAQs",
+		"FAQsParagraph": "Tutto ciò che hai bidogno di sapere su Pretty U. Non trovi quello che stavi cercando? Invia pure una mail all'indirizzo ",
+		"faqs": [
+			{
+				"q": "Come la installo?",
+				"a": "Puoi installare l'estensione sia dal [Chrome Web Store](https://chrome.google.com/webstore/detail/pretty-unipd/paliadhebikeffllmbfcpmoahogiegcf) che da [Add-ons per Firefox](https://addons.mozilla.org/it/firefox/addon/prettyunipd/) come faresti per qualsiasi altra estensione."
+			},
+			{
+				"q": "E se usassi un browser X?",
+				"id": "browser-x",
+				"a": "Pretty U è disponibile su tutti i [principali browser](https://gs.statcounter.com/browser-market-share/desktop/worldwide) tranne Safari. Se il tuo browser è basato su [Chromium](https://en.wikipedia.org/wiki/Chromium_(web_browser)) (ad es. Brave) allora la puoi usare."
+			},
+			{
+				"q": "Mi ruberai i dati?",
+				"a": "Cosa? Certo che no. L'estensione è stata fatta con lo scopo di aiutare me e i miei colleghi studenti a navigare l'intricata e a volte obsoleta interfaccia del [sito dell'università](https://unipd.it)."
+			},
+			{
+				"q": "Funziona anche da telefono?",
+				"a": "Purtroppo no. È disponibile solo per browser su computer portatili e fissi."
+			},
+			{
+				"q": "Come la disabilito?",
+				"a": "Cliccando sull'icona dell'estensione in alto a destra dovrebbe comparire un popup. Da lì potrai abilitare e disabilitare Pretty U. Dovrai ricaricare la pagina perché la modifica venga applicata."
+			},
+			{
+				"q": "Manca qualcosa nel sito...",
+				"a": "Se qualcosa manca o è fuori posto puoi disabilitare l'estensione e ricaricare la pagina. Se dopo averlo fatto non è cambiato nulla, allora è un problema della pagina sottostante e non di Pretty U."
+			}
+		],
+		"projectBy": "Un progetto di"
+	},
+	"/mods": {
+		"homeLink": "Home",
+		"pageTitle": "Lista modifiche",
+		"introParagraph": "Qua trovi una lista completa delle modifiche apportate da Pretty U all'interfaccia originale del sito dell'università.",
+		"annotationTitle": "Nota",
+		"annotationText": "Gli URL potrebbero contenere caratteri 'jolly' come l'asterisco. Ad esempio, nel seguente URL l'asterisco può essere sostituito con uno qualunque dei sottodomini di unipd.it.",
+		"modCategories": [
+			{
+				"title": "Pagine",
+				"description": "Riprogettazione di pagine intere",
+				"mods": [
+					{
+						"title": "Shibboleth SSO",
+						"url": "http*://shibidp.cca.unipd.it/idp/profile/SAML2/Redirect/SSO*"
+					},
+					{
+						"title": "DEI login",
+						"url": "http*://elearning.dei.unipd.it/mod/page/view.php?id=*"
+					},
+					{
+						"title": "Consenso alla politica d'uso",
+						"url": "http*://elearning.dei.unipd.it/user/policy.php"
+					}
+				]
+			},
+			{
+				"title": "Componenti",
+				"description": "Riprogettazione di singoli componenti (ad es. la barra di navigazione)",
+				"mods": [
+					{
+						"title": "Barra di navigazione del DEI",
+						"url": "http*://elearning.dei.unipd.it/*"
+					}
+				]
+			}
+		],
+		"projectBy": "Un progetto di"
+	}
+}

@@ -1,0 +1,100 @@
+{
+	"/": {
+		"heroContents": {
+			"heroHeading": "Make Unipd.it great again.",
+			"heroParagraph": "Tired of seeing and using that old, clunky interface? Pretty U will replace it with a much more user friandly version.",
+			"getItOn": "Get it on",
+			"chromeWebStore": "Chrome Web Store",
+			"addonsForFirefox": "Add-ons for Firefox",
+			"otherBrowser": "Other..."
+		},
+		"sections": [
+			{
+				"title": "Better UI",
+				"text": "Pretty U injects some custom CSS and JS files in the page and uses them to improve the layout and design of the UI.",
+				"img": "/assets/images/comparison_1.png",
+				"imgAlt": "Login page comparison"
+			},
+			{
+				"title": "Easier navigation",
+				"text": "Navigate the site easily with the new simplified navigation bar. See the full list of modificationas in the [mods page](/mods).",
+				"img": "/assets/images/comparison_2.png",
+				"imgAlt": "DEI navbar comparison"
+			},
+			{
+				"title": "Secure by default",
+				"text": "Pretty U only modifies the structure and look of the UI, it doesn't interfere with the page's data fetching and authentication logic.",
+				"img": "/assets/images/code_screenshot.png",
+				"imgAlt": "Screenshot of the scripts' code"
+			}
+		],
+		"FAQs": "FAQs",
+		"FAQsParagraph": "Everything you need to know about Pretty U. Can't find the answer you were looking for? Feel free to reach out to me at ",
+		"faqs": [
+			{
+				"q": "How do I install it?",
+				"a": "You can install it either from the [Chrome Web Store](https://chrome.google.com/webstore/detail/pretty-unipd/paliadhebikeffllmbfcpmoahogiegcf) or from [Add-ons for Firefox](https://addons.mozilla.org/it/firefox/addon/prettyunipd/) as you would for any other browser extension."
+			},
+			{
+				"q": "What if I use browser X?",
+				"id": "browser-x",
+				"a": "Currently Pretty U is available on all [major browsers](https://gs.statcounter.com/browser-market-share/desktop/worldwide) except Safari. If your browser is [Chromium](https://en.wikipedia.org/wiki/Chromium_(web_browser)) based (e.g. Brave) then you can use it."
+			},
+			{
+				"q": "Will you steal my data?",
+				"a": "What? Of course not. The extension was made to help myself and my fellow students navigate the intricate and sometimes outdated [unipd.it](https://unipd.it) UI."
+			},
+			{
+				"q": "Does it work on mobile?",
+				"a": "Unfortunately no. It is available only for desktop browsers."
+			},
+			{
+				"q": "How can I disable it?",
+				"a": "If you click on the extension icon a popup should appear. From there you can enable and disable Pretty U. You will have to reload the page for the change to be applied."
+			},
+			{
+				"q": "Something is missing",
+				"a": "If something is missing or out of place you can disable the extension and reload the page. If after diong that you still see the issue, then it's a problem in the underlying page and not in Pretty U itself."
+			}
+		],
+		"projectBy": "A project by"
+	},
+	"/mods": {
+		"homeLink": "Home",
+		"pageTitle": "Modifications list",
+		"introParagraph": "Here you can find a list of all the modifications made by Pretty U to university's stock website UI.",
+		"annotationTitle": "Note",
+		"annotationText": "URLs may contain wildcard characters like the asterisk. For example, in the following url the asterisk can be replaced with any of unipd.it's subdomain names.",
+		"modCategories": [
+			{
+				"title": "Pages",
+				"description": "Complete page redesigns",
+				"mods": [
+					{
+						"title": "Shibboleth SSO",
+						"url": "http*://shibidp.cca.unipd.it/idp/profile/SAML2/Redirect/SSO*"
+					},
+					{
+						"title": "DEI login",
+						"url": "http*://elearning.dei.unipd.it/mod/page/view.php?id=*"
+					},
+					{
+						"title": "Site policy agreement",
+						"url": "http*://elearning.dei.unipd.it/user/policy.php"
+					}
+				]
+			},
+			{
+				"title": "Components",
+				"description": "Single component redesigns (e.g. the navbar)",
+				"mods": [
+					{
+						"title": "DEI navbar",
+						"url": "http*://elearning.dei.unipd.it/*"
+					}
+				]
+			}
+		],
+		"projectBy": "A project by"
+	}
+}
