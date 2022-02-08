@@ -13,9 +13,11 @@
 		"@heroicons/react": "^1.0.5",
 		"next": "12.0.9",
 		"next-sitemap": "^2.1.13",
+		"plaiceholder": "^2.2.0",
 		"react": "17.0.2",
 		"react-dom": "17.0.2",
-		"react-intl": "^5.24.6"
+		"react-intl": "^5.24.6",
+		"sharp": "^0.30.0"
 	},
 	"devDependencies": {
 		"@types/node": "^17.0.14",

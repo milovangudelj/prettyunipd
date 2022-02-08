@@ -3,23 +3,40 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { Disclosure, Transition } from "@headlessui/react";
 import { ChevronDownIcon, ChevronRightIcon } from "@heroicons/react/solid";
+import { getPlaiceholder } from "plaiceholder";
 
 import Hero from "../components/Hero";
 import { location } from "../variables";
 import Divide from "../components/Divide";
 import { parseURLs } from "../utils";
+import Image from "next/image";
 
 export const getStaticProps = async ({ locale }) => {
-	let text = await import(`../lang/${locale}.json`).then((res) => res["/"]);
+	const text = await import(`../lang/${locale}.json`).then((res) => res["/"]);
+
+	// Get placeholder blur data for all images
+	const images = [];
+	for (const section of text.sections) {
+		const { img, base64 } = await getPlaiceholder(section.img);
+
+		images.push({
+			alt: section.imgAlt,
+			imageProps: {
+				...img,
+				blurDataURL: base64,
+			},
+		});
+	}
 
 	return {
 		props: {
 			text,
+			images,
 		},
 	};
 };
 
-export default function Home({ text }) {
+export default function Home({ text, images }) {
 	const [browserX, setBrowserX] = useState(false);
 	const router = useRouter();
 
@@ -85,11 +102,15 @@ export default function Home({ text }) {
 								{parseURLs(section.text)}
 							</p>
 						</div>
-						<img
-							src={section.img}
-							alt={section.imgAlt}
-							className="-mx-4 w-screen max-w-none md:mx-0 md:w-[calc(50%-16px)] lg:w-3/5"
-						/>
+						<div className="relative -mx-4 aspect-[16/10] w-screen max-w-none md:mx-0 md:w-[calc(50%-16px)] lg:w-3/5">
+							<Image
+								alt={images[idx].alt}
+								{...images[idx].imageProps}
+								layout="fill"
+								objectFit="cover"
+								placeholder="blur"
+							/>
+						</div>
 					</div>
 				))}
 			</section>
