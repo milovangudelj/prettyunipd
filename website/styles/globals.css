@@ -40,7 +40,15 @@
 	  display: none;
 	}
 	.scrollbar-visible::-webkit-scrollbar {
-		@apply block w-[10px];
+		display: unset;
+	}
+
+	/* Width */
+	.scrollbar-slim::-webkit-scrollbar {
+		@apply w-[8px] bg-grey-200 dark:bg-grey-700;
+	}
+	.scrollbar-slim::-webkit-scrollbar-button {
+		@apply w-[8px] h-[8px] bg-grey-900/20 dark:bg-grey-50/20;
 	}
  
 	/* Track */
