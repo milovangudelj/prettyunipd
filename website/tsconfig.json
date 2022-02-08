@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "lib/messages.jsx"  ],
+, "lib/messages.jsx", "tailwind.config.js"  ],
   "exclude": [
     "node_modules"
   ]
