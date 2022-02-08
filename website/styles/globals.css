@@ -37,7 +37,7 @@
 
 @layer utilities {
 	.scrollbar-hidden::-webkit-scrollbar {
-	  display: none;
+		display: none;
 	}
 	.scrollbar-visible::-webkit-scrollbar {
 		display: unset;
@@ -45,27 +45,27 @@
 
 	/* Width */
 	.scrollbar-slim::-webkit-scrollbar {
-		@apply w-[8px] bg-grey-200 dark:bg-grey-700;
+		@apply bg-grey-200 dark:bg-grey-700 w-[8px];
 	}
 	.scrollbar-slim::-webkit-scrollbar-button {
-		@apply w-[8px] h-[8px] bg-grey-900/20 dark:bg-grey-50/20;
+		@apply bg-grey-900/20 dark:bg-grey-50/20 h-[8px] w-[8px];
 	}
- 
+
 	/* Track */
 	.scrollbar-slim::-webkit-scrollbar-track {
-	  @apply bg-grey-200 dark:bg-grey-700;
+		@apply bg-grey-200 dark:bg-grey-700;
 	}
- 
+
 	/* Handle */
 	.scrollbar-slim::-webkit-scrollbar-thumb {
-	  @apply bg-grey-900/20 dark:bg-grey-50/20 rounded-full;
+		@apply bg-grey-900/20 dark:bg-grey-50/20 rounded-full;
 	}
- 
+
 	/* Handle on hover */
 	.scrollbar-slim::-webkit-scrollbar-thumb:hover {
-	  @apply bg-grey-900/40 dark:bg-grey-50/40;
+		@apply bg-grey-900/40 dark:bg-grey-50/40;
 	}
- }
+}
 
 html {
 	@apply text-[18px] lg:text-[16px];
