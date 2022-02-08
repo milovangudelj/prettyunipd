@@ -6,32 +6,63 @@
 
 @layer components {
 	.btn {
-		@apply min-w-[64px] md:w-max font-medium flex w-full items-center transform justify-center space-x-3 rounded-lg py-2 px-4 outline-none transition hover:-translate-y-0.5 focus:ring-4;
+		@apply flex w-full min-w-[64px] transform items-center justify-center space-x-3 rounded-lg py-2 px-4 font-medium outline-none transition hover:-translate-y-0.5 focus:ring-4 md:w-max;
 	}
 
 	.btn--primary {
 		@apply btn;
-		@apply bg-primary-500 text-white focus:ring-primary-500/30 focus:bg-primary-600 dark:bg-primary-400 dark:focus:bg-primary-500 dark:focus:ring-primary-400/30;
+		@apply bg-primary-500 focus:ring-primary-500/30 focus:bg-primary-600 dark:bg-primary-400 dark:focus:bg-primary-500 dark:focus:ring-primary-400/30 text-white;
 	}
 
 	.btn--accent {
 		@apply btn;
-		@apply bg-accent-500 text-white focus:ring-accent-500/30 focus:bg-accent-600 dark:bg-accent-400 dark:focus:bg-accent-500 dark:focus:ring-accent-400/30 dark:text-grey-900;
+		@apply bg-accent-500 focus:ring-accent-500/30 focus:bg-accent-600 dark:bg-accent-400 dark:focus:bg-accent-500 dark:focus:ring-accent-400/30 dark:text-grey-900 text-white;
 	}
 
 	.btn--grey {
 		@apply btn;
-		@apply bg-grey-200 text-grey-500 focus:ring-grey-200/30 focus:bg-grey-300 dark:bg-grey-700 dark:text-grey-300 dark:focus:bg-grey-800 dark:focus:ring-grey-600/50 md:bg-transparent md:hover:bg-grey-200 md:focus:bg-grey-300 md:dark:bg-transparent md:dark:focus:bg-grey-800 md:dark:hover:bg-grey-800 md:hover:translate-y-0;
+		@apply bg-grey-200 text-grey-500 focus:ring-grey-200/30 focus:bg-grey-300 dark:bg-grey-700 dark:text-grey-300 dark:focus:bg-grey-800 dark:focus:ring-grey-600/50 md:hover:bg-grey-200 md:focus:bg-grey-300 md:dark:focus:bg-grey-800 md:dark:hover:bg-grey-800 md:bg-transparent md:hover:translate-y-0 md:dark:bg-transparent;
 	}
 
 	.btn--chrome {
 		@apply btn;
-		@apply bg-chrome focus:ring-chrome/30 text-white focus:bg-chrome-alt;
+		@apply bg-chrome focus:ring-chrome/30 focus:bg-chrome-alt text-white;
 	}
 
 	.btn--firefox {
 		@apply btn;
-		@apply bg-firefox focus:ring-firefox/30 text-white focus:bg-firefox-alt;
+		@apply bg-firefox focus:ring-firefox/30 focus:bg-firefox-alt text-white;
+	}
+}
+
+@layer utilities {
+	/* Hide scrollbar */
+	.scrollbar-hidden {
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+
+	.scrollbar {
+		/* Size */
+		&::-webkit-scrollbar {
+			@apply block w-[10px];
+		}
+
+		/* Track */
+		&::-webkit-scrollbar-track {
+			@apply bg-grey-200 dark:bg-grey-700;
+		}
+
+		/* Handle */
+		&::-webkit-scrollbar-thumb {
+			@apply bg-grey-900/20 dark:bg-grey-50/20 rounded-full;
+		}
+
+		/* Handle on hover */
+		&::-webkit-scrollbar-thumb:hover {
+			@apply bg-grey-900/40 dark:bg-grey-50/40;
+		}
 	}
 }
 
@@ -41,7 +72,7 @@ html {
 }
 
 body {
-	@apply text-base text-grey-500 dark:text-grey-300;
+	@apply text-grey-500 dark:text-grey-300 text-base;
 }
 
 a {

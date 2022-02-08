@@ -10,7 +10,7 @@ const Layout = (props) => {
 
 	return (
 		<div className={dark ? "dark" : undefined}>
-			<div className="bg-grey-50 dark:bg-grey-900 min-h-screen">
+			<div className="bg-grey-50 dark:bg-grey-900 scrollbar-hidden md:scrollbar min-h-screen">
 				{props.children}
 				{(pathname === "/" || pathname === "/mods") && (
 					<>

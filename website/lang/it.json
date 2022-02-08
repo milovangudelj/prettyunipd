@@ -12,19 +12,19 @@
 			{
 				"title": "UI migliorata",
 				"text": "Pretty U inserisce dei file CSS e JS nella pagina e li usa per migliorare il layout e il design dell'interfaccia.",
-				"img": "/assets/images/comparison_1.png",
+				"img": "/assets/images/comparison_1.webp",
 				"imgAlt": "Immagine di paragone della pagina di login"
 			},
 			{
 				"title": "Navigazione semplice",
 				"text": "Naviga il sito facilmente con la nuova barra di navigazione. Vedi la lista completa delle modifiche alla [relativa pagina](/mods).",
-				"img": "/assets/images/comparison_2.png",
+				"img": "/assets/images/comparison_2.webp",
 				"imgAlt": "Immagine di paragone della barra di navigazione del DEI"
 			},
 			{
 				"title": "Sicura di default",
 				"text": "Pretty U modifica solo la struttura e l'aspetto dell'interfaccia e non interferisce con la logica di autenticazione o di trasmissione dei dati.",
-				"img": "/assets/images/code_screenshot.png",
+				"img": "/assets/images/code_screenshot.webp",
 				"imgAlt": "Screenshot del codice degli scripts"
 			}
 		],

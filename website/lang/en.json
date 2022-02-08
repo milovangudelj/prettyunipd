@@ -12,19 +12,19 @@
 			{
 				"title": "Better UI",
 				"text": "Pretty U injects some custom CSS and JS files in the page and uses them to improve the layout and design of the UI.",
-				"img": "/assets/images/comparison_1.png",
+				"img": "/assets/images/comparison_1.webp",
 				"imgAlt": "Login page comparison"
 			},
 			{
 				"title": "Easier navigation",
 				"text": "Navigate the site easily with the new simplified navigation bar. See the full list of modificationas in the [mods page](/mods).",
-				"img": "/assets/images/comparison_2.png",
+				"img": "/assets/images/comparison_2.webp",
 				"imgAlt": "DEI navbar comparison"
 			},
 			{
 				"title": "Secure by default",
 				"text": "Pretty U only modifies the structure and look of the UI, it doesn't interfere with the page's data fetching and authentication logic.",
-				"img": "/assets/images/code_screenshot.png",
+				"img": "/assets/images/code_screenshot.webp",
 				"imgAlt": "Screenshot of the scripts' code"
 			}
 		],
