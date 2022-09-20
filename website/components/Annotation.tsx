@@ -3,7 +3,7 @@ import { useState } from "react";
 type AnnotationType = "note" | "warning" | "error";
 
 interface Annotation {
-	children: JSX.Element | React.ReactChildren;
+	children: React.ReactNode;
 	className?: string;
 	type?: AnnotationType;
 	title?: string;
