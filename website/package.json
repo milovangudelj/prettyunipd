@@ -10,7 +10,7 @@
 	},
 	"dependencies": {
 		"@headlessui/react": "1.7.14",
-		"@heroicons/react": "2.0.17",
+		"@heroicons/react": "2.0.18",
 		"next": "13.4.1",
 		"next-sitemap": "4.0.9",
 		"plaiceholder": "2.5.0",
