@@ -20,7 +20,7 @@
 		"sharp": "0.33.0"
 	},
 	"devDependencies": {
-		"@types/node": "20.10.2",
+		"@types/node": "20.10.3",
 		"@types/react": "18.2.41",
 		"autoprefixer": "10.4.16",
 		"eslint": "8.55.0",
