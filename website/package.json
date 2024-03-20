@@ -11,7 +11,7 @@
 	"dependencies": {
 		"@headlessui/react": "1.7.18",
 		"@heroicons/react": "2.1.1",
-		"next": "14.1.3",
+		"next": "14.1.4",
 		"next-sitemap": "4.2.3",
 		"plaiceholder": "3.0.0",
 		"react": "18.2.0",
@@ -24,7 +24,7 @@
 		"@types/react": "18.2.67",
 		"autoprefixer": "10.4.18",
 		"eslint": "8.57.0",
-		"eslint-config-next": "14.1.3",
+		"eslint-config-next": "14.1.4",
 		"postcss": "8.4.37",
 		"postcss-import": "16.0.1",
 		"postcss-nested": "6.0.1",
