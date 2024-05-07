@@ -169,10 +169,10 @@
     intl-messageformat "10.5.12"
     tslib "^2.4.0"
 
-"@headlessui/react@2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@headlessui/react/-/react-2.0.2.tgz#ec4710af3d11f5679528f684292a2adbe5934359"
-  integrity sha512-fbMczahZ3Q5M0tNZJABhMpMahfE/lIe8RYQxif421Ij4Q+4G/osr1eKMoEEJWU32WFR7bwIRusaSRuZVHAmAQA==
+"@headlessui/react@2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@headlessui/react/-/react-2.0.3.tgz#7506d808a6f3abc307f35354d34b8d642ecfd692"
+  integrity sha512-Xd1h0YZgfhxZ7W1w4TvK0/TZ1c4qaX4liYVUkAXqW1HCLcXSqnMeYAUGJS/BBroBAUL9HErjyFcRpCWRQZ/0lA==
   dependencies:
     "@floating-ui/react" "^0.26.13"
     "@react-aria/focus" "^3.16.2"
