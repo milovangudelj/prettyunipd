@@ -45,7 +45,7 @@
 	},
 	"devDependencies": {
 		"autoprefixer": "10.4.20",
-		"eslint": "9.11.0",
+		"eslint": "9.11.1",
 		"eslint-config-next": "14.2.13",
 		"nodemon": "3.1.7",
 		"npm-watch": "0.13.0",
