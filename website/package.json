@@ -16,7 +16,7 @@
 		"plaiceholder": "3.0.0",
 		"react": "19.0.0",
 		"react-dom": "19.0.0",
-		"react-intl": "7.0.1",
+		"react-intl": "7.0.2",
 		"sharp": "0.33.5"
 	},
 	"devDependencies": {
