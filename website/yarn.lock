@@ -567,19 +567,11 @@
     "@types/scheduler" "*"
     csstype "^3.0.2"
 
-"@types/react@19.0.12":
+"@types/react@16 || 17 || 18 || 19", "@types/react@19.0.12":
   version "19.0.12"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-19.0.12.tgz#338b3f7854adbb784be454b3a83053127af96bd3"
   integrity sha512-V6Ar115dBDrjbtXSrS+/Oruobc+qVbbUxDFC1RSbRqLt5SYvxxyIDrSC85RWml54g+jfNeEMZhEj7wW07ONQhA==
   dependencies:
-    csstype "^3.0.2"
-
-"@types/react@^18.3.12":
-  version "18.3.19"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.3.19.tgz#2b6a01315c9b1b644a8799a7d33efb027150240f"
-  integrity sha512-fcdJqaHOMDbiAwJnXv6XCzX0jDW77yI3tJqYh1Byn8EL5/S628WRx9b/y3DnNe55zTukUQKrfYxiZls2dHcUMw==
-  dependencies:
-    "@types/prop-types" "*"
     csstype "^3.0.2"
 
 "@types/scheduler@*":
@@ -2789,16 +2781,16 @@ react-dom@19.0.0:
   dependencies:
     scheduler "^0.25.0"
 
-react-intl@7.1.7:
-  version "7.1.7"
-  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-7.1.7.tgz#742be38ffa71ebf7215711f49a3b903be0e4c913"
-  integrity sha512-CQAW7HaiPY3rZ+RCxL91n9MIJ7yaNDt1WGmU2dO6O+JLDqQJSlBxYctGkAoUEGAWNdt2mxAX+ENMwg+cCGnyQQ==
+react-intl@7.1.9:
+  version "7.1.9"
+  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-7.1.9.tgz#4c426626fa528b205792f4f1f023752a4e33f7e3"
+  integrity sha512-VmM0pD/olitUrzGswkphoPCoVZmaJKNJR0gPKVQfiK5Vy0+l5ucoSsYbTfwu/j0WzYzZl/Gdfr2H7Z22AJ5TBg==
   dependencies:
     "@formatjs/ecma402-abstract" "2.3.4"
     "@formatjs/icu-messageformat-parser" "2.11.2"
     "@formatjs/intl" "3.1.5"
     "@types/hoist-non-react-statics" "^3.3.1"
-    "@types/react" "^18.3.12"
+    "@types/react" "16 || 17 || 18 || 19"
     hoist-non-react-statics "^3.3.2"
     intl-messageformat "10.7.16"
     tslib "^2.8.0"
