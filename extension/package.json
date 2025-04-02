@@ -50,6 +50,6 @@
 		"nodemon": "3.1.9",
 		"npm-watch": "0.13.0",
 		"postcss": "8.5.3",
-		"tailwindcss": "4.1.0"
+		"tailwindcss": "4.1.1"
 	}
 }
