@@ -39,14 +39,14 @@
 	},
 	"dependencies": {
 		"@heroicons/react": "2.2.0",
-		"next": "15.2.4",
+		"next": "15.2.5",
 		"react": "19.1.0",
 		"react-dom": "19.1.0"
 	},
 	"devDependencies": {
 		"autoprefixer": "10.4.21",
 		"eslint": "9.24.0",
-		"eslint-config-next": "15.2.4",
+		"eslint-config-next": "15.2.5",
 		"nodemon": "3.1.9",
 		"npm-watch": "0.13.0",
 		"postcss": "8.5.3",
